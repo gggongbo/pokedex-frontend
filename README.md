@@ -107,6 +107,7 @@ yarn start | npm run start
 - **hooks**: 커스텀 훅
   - useInClick.ts
   - useIntersectObserver.ts
+  - useUpdateEffect.ts
 - **store**: redux store 설정 로직 위치
 - **slices**: redux toolkit slices(reducer+action) 로직 위치
 - **services**: axios를 사용한 [포켓몬 API](https://pokeapi.co/) 통신 로직 위치
