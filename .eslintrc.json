@@ -19,12 +19,12 @@
   ],
   "plugins": ["react-hooks", "prettier", "@typescript-eslint"],
   "rules": {
-    "prettier/prettier": ["error", { "endOfLine": "auto" }],
+    "prettier/prettier": ["error", { "endOfLine": "off" }],
     "react-hooks/rules-of-hooks": "error",
     "import/order": [
       "error",
       {
-        "groups": ["builtin", "external", ["parent", "sibling"], "index"],
+        "groups": ["external", "builtin", ["parent", "sibling"], "index"],
         "alphabetize": {
           "order": "asc",
           "caseInsensitive": true
