@@ -5,9 +5,11 @@ import { persistReducer, persistStore } from "redux-persist";
 import createWebStorage from "redux-persist/lib/storage/createWebStorage";
 
 import user, { UserSliceState } from "@slices/user";
+import pokemon, { PokemonSliceState } from "@slices/pokemon";
 
 export type ReduxStore = {
   user: UserSliceState;
+  pokemon: PokemonSliceState;
 };
 
 const createNoopStorage = () => ({
@@ -39,8 +41,15 @@ const userPersistConfig = {
   blacklist: [],
 };
 
+const pokemonPersistConfig = {
+  key: "pokemon",
+  storage: sessionStorage,
+  blacklist: ["isDetailLoading"],
+};
+
 const appReducer = combineReducers({
   user: persistReducer(userPersistConfig, user),
+  pokemon: persistReducer(pokemonPersistConfig, pokemon),
 });
 
 const rootReducer = (state: any, action: any) => {
@@ -52,6 +61,7 @@ const rootReducer = (state: any, action: any) => {
     };
     // Client Store에서만 관리하는 Slices 처리(Server Store로 덮어써지지 않도록) START
     nextState.user = state.user;
+    nextState.pokemon = state.pokemon;
     // Client Store에서만 관리하는 Slices 처리(Server Store로 덮어써지지 않도록) END
 
     return nextState;

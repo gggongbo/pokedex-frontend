@@ -13,6 +13,10 @@ type UseIntersectObserverParemeter = {
   ) => Promise<InfiniteQueryObserverResult<any, unknown>>;
 };
 
+/**
+ * IntersectObserver 관련 커스텀 Hook
+ * @param {UseIntersectObserverParemeter} params
+ */
 const useIntersectObserver = (params: UseIntersectObserverParemeter) => {
   const { ref, enableObserver, hasNextPage, fetchNextPage } = params;
 
@@ -35,7 +39,7 @@ const useIntersectObserver = (params: UseIntersectObserverParemeter) => {
     observer.observe(element);
 
     return () => observer.unobserve(element);
-  }, [fetchNextPage, hasNextPage, handleObserver]);
+  }, [enableObserver, handleObserver]);
 };
 
 export { useIntersectObserver };

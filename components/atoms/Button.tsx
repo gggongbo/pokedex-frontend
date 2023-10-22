@@ -1,4 +1,4 @@
-import { ComponentProps, FC, HTMLAttributes, forwardRef } from "react";
+import { ComponentProps, FC, HTMLAttributes } from "react";
 
 import { classNames } from "@utils/tailwindcss";
 
@@ -73,7 +73,7 @@ const Button: FC<ButtonProps> = (props) => {
         ${buttonConfig[size]}
         ${flex && buttonConfig.flex}
         ${disabled && "opacity-50"}`,
-        className === undefined ? "" : className
+        className === undefined ? "" : className,
       )}
       disabled={disabled}
       onClick={onClick}

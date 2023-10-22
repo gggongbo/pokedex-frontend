@@ -269,6 +269,13 @@
   dependencies:
     "@types/react" "*"
 
+"@types/react-window@^1.8.7":
+  version "1.8.7"
+  resolved "https://registry.yarnpkg.com/@types/react-window/-/react-window-1.8.7.tgz#742a5e00b7aa45c9f0afc1be8c7b562a36950e8a"
+  integrity sha512-FpPHEhmGVOBKomuR4LD2nvua1Ajcw6PfnfbDysuCwwPae3JNulcq3+uZIpQNbDN2AI1z+Y4tKj2xQ4ELiQ4QDw==
+  dependencies:
+    "@types/react" "*"
+
 "@types/react@*":
   version "18.2.31"
   resolved "https://registry.yarnpkg.com/@types/react/-/react-18.2.31.tgz#74ae2630e4aa9af599584157abd3b95d96fb9b40"
@@ -301,6 +308,11 @@
   version "0.0.3"
   resolved "https://registry.yarnpkg.com/@types/use-sync-external-store/-/use-sync-external-store-0.0.3.tgz#b6725d5f4af24ace33b36fafd295136e75509f43"
   integrity sha512-EwmlvuaxPNej9+T4v5AuBPJa2x2UOJVdjCtDHgcDqitUeOtjnJKJ+apYjVcAoBEMjKW1VVFGZLUb5+qqa09XFA==
+
+"@types/uuid@^9.0.6":
+  version "9.0.6"
+  resolved "https://registry.yarnpkg.com/@types/uuid/-/uuid-9.0.6.tgz#c91ae743d8344a54b2b0c691195f5ff5265f6dfb"
+  integrity sha512-BT2Krtx4xaO6iwzwMFUYvWBWkV2pr37zD68Vmp1CDV196MzczBRxuEpD6Pr395HAgebC/co7hOphs53r8V7jew==
 
 "@typescript-eslint/eslint-plugin@^6.8.0":
   version "6.8.0"
@@ -2381,11 +2393,6 @@ react-redux@^8.1.3:
     react-is "^18.0.0"
     use-sync-external-store "^1.0.0"
 
-react-window-infinite-loader@^1.0.9:
-  version "1.0.9"
-  resolved "https://registry.yarnpkg.com/react-window-infinite-loader/-/react-window-infinite-loader-1.0.9.tgz#d861c03d5cbc550e2f185371af820fd22d46c099"
-  integrity sha512-5Hg89IdU4Vrp0RT8kZYKeTIxWZYhNkVXeI1HbKo01Vm/Z7qztDvXljwx16sMzsa9yapRJQW3ODZfMUw38SOWHw==
-
 react-window@^1.8.9:
   version "1.8.9"
   resolved "https://registry.yarnpkg.com/react-window/-/react-window-1.8.9.tgz#24bc346be73d0468cdf91998aac94e32bc7fa6a8"
@@ -2913,6 +2920,11 @@ util-deprecate@^1.0.2:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/util-deprecate/-/util-deprecate-1.0.2.tgz#450d4dc9fa70de732762fbd2d4a28981419a0ccf"
   integrity sha512-EPD5q1uXyFxJpCrLnCc1nHnq3gOa6DZBocAIiI2TaSCA7VCJ1UJDMagCzIkXNsUYfD1daK//LTEQ8xiIbrHtcw==
+
+uuid@^9.0.1:
+  version "9.0.1"
+  resolved "https://registry.yarnpkg.com/uuid/-/uuid-9.0.1.tgz#e188d4c8853cc722220392c424cd637f32293f30"
+  integrity sha512-b+1eJOlsR9K8HJpow9Ok3fiWOWSIcIzXodvv0rQjVoOVNpWMpxf1wZNpt4y9h10odCNrqnYp1OBzRktckBe3sA==
 
 watchpack@2.4.0:
   version "2.4.0"
